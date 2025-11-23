@@ -1,4 +1,4 @@
-import { useState, type HtmlHTMLAttributes } from "react";
+import { useState } from "react";
 import { useAuthStore } from "../store/useAuthStore";
 import AuthImagePattern from "../components/AuthImagePatterns";
 import { Link } from "react-router-dom";
