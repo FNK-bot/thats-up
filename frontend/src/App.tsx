@@ -27,7 +27,7 @@ const App = () => {
   if (isCheckingAuth) {
     return <Loader />;
   }
-  
+
   return (
     <div data-theme={theme}>
       <NavBar />
@@ -38,9 +38,9 @@ const App = () => {
         </Route>
         <Route element={<PrivateRoutes />}>
           <Route path="/" element={<HomePage />} />
-          <Route path="/settings" element={<SettingsPage />} />
           <Route path="/profile" element={<ProfilePage />} />
         </Route>
+          <Route path="/settings" element={<SettingsPage />} />
       </Routes>
       <Toaster position="bottom-center" reverseOrder={false} />
     </div>

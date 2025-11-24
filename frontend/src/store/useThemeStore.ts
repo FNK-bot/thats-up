@@ -8,7 +8,7 @@ export interface ThemeState {
 
 export const useThemeStore = create<ThemeState>( set =>{
     return {
-        theme: window.localStorage.getItem(LocalStorageNames.THEME) || 'retro',
+        theme: window.localStorage.getItem(LocalStorageNames.THEME) || 'light',
         setTheme: (theme) => {
             window.localStorage.setItem(LocalStorageNames.THEME,theme);
             set({ theme })},
